@@ -1,2 +1,25 @@
-{{page-title "Cart"}}
-{{outlet}}
+<main class='container mt-5'>
+  <h1>Shopping Cart</h1>
+  <ul class='nav'>
+    <li class='nav-item'>
+      <LinkTo class='nav-link' @route='index'>Home</LinkTo>
+    </li>
+    <li class='nav-item'>
+      <LinkTo class='nav-link' @route='cart'>Shopping Cart</LinkTo>
+    </li>
+  </ul>
+  <section class='w-50 ml-auto text-right nb-5'>
+    <div class='row'>
+      <span class='col'>Subtotal</span>
+      <span class='col'>100</span>
+    </div>
+    <div class='row'>
+      <span class='col'>Tax</span>
+      <span class='col'>9</span>
+    </div>
+    <div class='row'>
+      <span class='col'>Total</span>
+      <span class='col'>109</span>
+    </div>
+  </section>
+</main>
